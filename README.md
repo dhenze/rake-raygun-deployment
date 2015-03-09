@@ -38,4 +38,4 @@ This is an example release file:
 
         ### Jamie
 
-Once you've written this to `releases/LATEST`, run `rake raygun_deployment` and your deployment will be sent to Raygun!
+Once you've written this to `RELEASE`, run `rake raygun_deployment` and your deployment will be sent to Raygun!
