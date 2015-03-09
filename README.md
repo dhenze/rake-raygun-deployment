@@ -18,14 +18,14 @@ Then, add the following to your `Rakefile`:
     require 'rake-raygun-deployment'
 
     Rake::RaygunDeployment.new(:raygun_deployment) do
-        releasePath "releases/LATEST"
+        releasePath "RELEASE"
         authToken "YOUR_EXTERNAL_AUTH_TOKEN"
         apiKey "YOUR_APPLICATIONS_API_KEY"
     end
 
 You'll need the Raygun API Key for your application, plus an External Auth Token which you can generate [here](https://app.raygun.io/user).
 
-Finally, create a release file. We default to checking `releases/LATEST`, so recommend add a release file for each time you deploy and symlink the latest one to `LATEST`. 
+Finally, create a release file. We default to checking `RELEASE` but you can set `releasePath` to anything you like.
 This is an example release file:
 
     version: 6.0.0.0
