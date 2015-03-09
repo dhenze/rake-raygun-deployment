@@ -1,0 +1,7 @@
+require 'rake-raygun-deployment'
+
+Rake::RaygunDeployment.new(:raygun_deployment) do
+    releasePath "releases/LATEST"
+    authToken "YOUR_EXTERNAL_AUTH_TOKEN"
+    apiKey "YOUR_APPLICATIONS_API_KEY"
+end
