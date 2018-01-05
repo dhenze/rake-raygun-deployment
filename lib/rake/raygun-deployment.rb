@@ -15,7 +15,7 @@ class Rake::RaygunDeployment < Rake::TaskLib
         @use_git = true
 
         @config = block
-        desc "Sends the latest deployment information to Raygun" unless Rake.application.last_comment
+        desc "Sends the latest deployment information to Raygun" unless Rake.application.last_description
         task name do
             invoke
         end
